@@ -34,7 +34,7 @@ const PCBuild = ({ products, addToCart }) => {
     for (const category in selectedProducts) {
       
       const productId = selectedProducts[category];
-      const product = products.find(prod => prod._id === productId);
+      const product = products.find(prod => prod.id === productId);
       if (product) {
         totalPrice += product.price;
       }
@@ -51,10 +51,10 @@ const PCBuild = ({ products, addToCart }) => {
       console.log(selectedProducts)
       // const { slug } = router.query
       const productId = selectedProducts[category];
-      const product = products.find(prod => prod._id === productId);
-      console.log(product.title);
-      console.log(productId);
-      addToCart( product._id,1, product.price, product.title);
+      const product = products.find(prod => prod.id === productId);
+      // console.log(product.title);
+      console.log(product);
+      addToCart( product.id,1, product.price, product.title);
     }
     // console.log('Selected products:', selectedProducts);
     setSelectedProducts({});
@@ -91,7 +91,7 @@ const PCBuild = ({ products, addToCart }) => {
             {products
               .filter(product => product.category === category)
               .map(product => (
-                <option key={product._id} value={product._id}>{product.title}</option>
+                <option key={product.id} value={product.id}>{product.title}</option>
               ))
             }
           </select>
