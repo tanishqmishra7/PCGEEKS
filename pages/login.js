@@ -92,7 +92,7 @@ const Login = ({setuser}) => {
       <div className="flex min-h-screen items-start justify-center pt-24 px-4 sm:px-6 lg:px-8">
         <div className="w-full max-w-md space-y-8">
           <div>
-            <img className="md:ml-28 h-20 w-auto ml-16" src="/logo1.png" alt=" Solution" />
+            <img className="md:ml-28 h-20 w-auto ml-16" src="/logo.png" alt=" Solution" />
             <h2 className="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">Sign in to your account</h2>
             <p className="mt-2 text-center text-sm text-gray-600">
               Or
