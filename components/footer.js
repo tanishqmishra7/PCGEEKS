@@ -34,7 +34,7 @@ const Footer = () => {
                   <Link href={"/products?category=GraphicCard"}><a className="text-white hover:text-red-800">Graphic Card</a></Link>
                 </li>
                 <li>
-                  <Link href={"/products?category=KeyboardMouse"}><a className="text-white hover:text-red-800">Accessories</a></Link>
+                  <Link href={"/products?category=Accessories"}><a className="text-white hover:text-red-800">Accessories</a></Link>
                 </li>
                 <li>
                   <Link href={"/products?category=Storage"}><a className="text-white hover:text-red-800">Storage</a></Link>

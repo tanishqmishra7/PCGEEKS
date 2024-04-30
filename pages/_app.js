@@ -33,7 +33,7 @@ function MyApp({ Component, pageProps }) {
     }
     else if(num == 4)
     { 
-      setcategory("KeyboardMouse")
+      setcategory("Accessories")
     }
     else if(num == 5)
     {

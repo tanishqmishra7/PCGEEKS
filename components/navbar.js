@@ -70,7 +70,7 @@ const Navbar = ({ logout, user, cart, addToCart, removeFromCart, clearCart, subT
                 <Link href={"/products?category=Monitor"}><li onClick={() => { setcategory("Monitor"); categoryselect(1);}} className='py-1 text-white text-sm font-bold hover:text-green-700'>Monitor</li></Link>
                   <Link href={"/products?category=Processor"}><li onClick={() => { setcategory("Processor"); categoryselect(2);}} className='py-1 text-white text-sm font-bold hover:text-green-700'>Processor</li></Link>
                   <Link href={"/products?category=GraphicCard"}><li onClick={() => { setcategory("GraphicCard"); categoryselect(3);}} className='py-1 text-white text-sm font-bold hover:text-green-700'>Graphic Card</li></Link>
-                  <Link href={"/products?category=KeyboardMouse"}><li onClick={() => { setcategory("KeyboardMouse"); categoryselect(4);}} className='py-1 text-white text-sm font-bold hover:text-green-700'>Accessories</li></Link>
+                  <Link href={"/products?category=Accessories"}><li onClick={() => { setcategory("Accessories"); categoryselect(4);}} className='py-1 text-white text-sm font-bold hover:text-green-700'>Accessories</li></Link>
                   <Link href={"/products?category=Storage"}><li onClick={() => { setcategory("Storage"); categoryselect(5);}} className='py-1 text-white text-sm font-bold hover:text-green-700'>Storage</li></Link>
                 </ul>
               </div>}

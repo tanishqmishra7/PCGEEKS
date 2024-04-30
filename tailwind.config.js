@@ -11,7 +11,8 @@ module.exports = {
 
       },
       colors:{
-        'bgcolor':'#141414'
+        'bgcolor':'#141414',
+        'iconcolor':'#3f3f3f'
       }
     },
 

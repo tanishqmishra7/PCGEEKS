@@ -15,7 +15,7 @@ const productC = ({ }) => {
           <Link href={"/products?category=Monitor"}><span className='hover:text-red-700 hover:border-red-700 hover:text-2xl text-xl border-solid border cursor-pointer rounded border-grey-800 p-20 m-5'>Monitor</span></Link>
           <Link href={"/products?category=Processor"}><span className='hover:text-red-700 hover:border-red-700 hover:text-2xl text-xl border-solid border cursor-pointer rounded border-grey-800 p-20 m-5'>Processor</span></Link>
           <Link href={"/products?category=GraphicCard"}><span className='hover:text-red-700 hover:border-red-700 hover:text-2xl text-xl border-solid border cursor-pointer rounded border-grey-800 p-20 m-5'>Graphic Card</span></Link>
-          <Link href={"/products?category=KeyboardMouse"}><span className='hover:text-red-700 hover:border-red-700 hover:text-2xl text-xl border-solid border cursor-pointer rounded border-grey-800 p-20 m-5'>Accessories</span></Link>
+          <Link href={"/products?category=Accessories"}><span className='hover:text-red-700 hover:border-red-700 hover:text-2xl text-xl border-solid border cursor-pointer rounded border-grey-800 p-20 m-5'>Accessories</span></Link>
           <Link href={"/products?category=Storage"}><span className='hover:text-red-700 hover:border-red-700 hover:text-2xl text-xl border-solid border cursor-pointer rounded border-grey-800 p-20 m-5'>Storage</span></Link>
         </div>
       </section>
