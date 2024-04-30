@@ -1,0 +1,52 @@
+// Selector.scss
+
+.selector {
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+  
+    h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  
+    select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      background-color: #fff;
+      appearance: none; /* Removes default arrow */
+      cursor: pointer;
+    }
+
+    select:focus {
+      outline: none;
+      border-color: #007bff; /* Change border color on focus */
+    }
+
+    select::-ms-expand {
+      display: none; /* Hides arrow in IE and Edge */
+    }
+    .arrow-icon {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+    }
+  
+  }
+  select option {
+    background-color: #fff;
+    color: #333;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  // Styling the selected option
+  select option:checked {
+    background-color: #007bff;
+    color: #fff;
+  }
+
+  
