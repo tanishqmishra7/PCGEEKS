@@ -67,11 +67,11 @@ const Navbar = ({ logout, user, cart, addToCart, removeFromCart, clearCart, subT
             {/* { <span onMouseOver={() => setdropdown1(true)} onMouseLeave={() => setdropdown1(false)} className='fixed md:top-5 md:ml-0 top-14.5 ml-7 z-30 cursor-pointer'>
               {dropdown1 && <div className='absolute  bg-black shadow-lg border md:top-7 top-5 rounded-md px-5 w-32 py-4'>
                 <ul>
-                <Link href={"/products?category=Monitor"}><li onClick={() => { setcategory("Monitor"); categoryselect(1);}} className='py-1 text-white text-sm font-bold hover:text-green-700'>Monitor</li></Link>
-                  <Link href={"/products?category=Processor"}><li onClick={() => { setcategory("Processor"); categoryselect(2);}} className='py-1 text-white text-sm font-bold hover:text-green-700'>Processor</li></Link>
-                  <Link href={"/products?category=GraphicCard"}><li onClick={() => { setcategory("GraphicCard"); categoryselect(3);}} className='py-1 text-white text-sm font-bold hover:text-green-700'>Graphic Card</li></Link>
-                  <Link href={"/products?category=Accessories"}><li onClick={() => { setcategory("Accessories"); categoryselect(4);}} className='py-1 text-white text-sm font-bold hover:text-green-700'>Accessories</li></Link>
-                  <Link href={"/products?category=Storage"}><li onClick={() => { setcategory("Storage"); categoryselect(5);}} className='py-1 text-white text-sm font-bold hover:text-green-700'>Storage</li></Link>
+                <Link href={"/products?category=Monitor"}><li onClick={() => { setcategory("Monitor"); categoryselect(1);}} className='py-1 text-white text-sm font-bold hover:text-red-700'>Monitor</li></Link>
+                  <Link href={"/products?category=Processor"}><li onClick={() => { setcategory("Processor"); categoryselect(2);}} className='py-1 text-white text-sm font-bold hover:text-red-700'>Processor</li></Link>
+                  <Link href={"/products?category=GraphicCard"}><li onClick={() => { setcategory("GraphicCard"); categoryselect(3);}} className='py-1 text-white text-sm font-bold hover:text-red-700'>Graphic Card</li></Link>
+                  <Link href={"/products?category=Accessories"}><li onClick={() => { setcategory("Accessories"); categoryselect(4);}} className='py-1 text-white text-sm font-bold hover:text-red-700'>Accessories</li></Link>
+                  <Link href={"/products?category=Storage"}><li onClick={() => { setcategory("Storage"); categoryselect(5);}} className='py-1 text-white text-sm font-bold hover:text-red-700'>Storage</li></Link>
                 </ul>
               </div>}
               <span   > 
@@ -79,11 +79,11 @@ const Navbar = ({ logout, user, cart, addToCart, removeFromCart, clearCart, subT
               </span>
             </span>} */}
 
-            <Link href={"/productC"}><a><li className='hover:text-green-700 ml-4'>Category</li></a></Link>
-            <Link href={"/allproducts"}><a><li className='hover:text-green-700 ml-4'>All Products</li></a></Link>
-            <Link href={"/PCBuild"}><a><li className='hover:text-green-700 md:mr-6 ml-4'>PC Build</li></a></Link>
+            <Link href={"/productC"}><a><li className='hover:text-red-700 ml-4'>Category</li></a></Link>
+            <Link href={"/allproducts"}><a><li className='hover:text-red-700 ml-4'>All Products</li></a></Link>
+            <Link href={"/PCBuild"}><a><li className='hover:text-red-700 md:mr-6 ml-4'>PC Build</li></a></Link>
         
-            <Link href={"/contactus"}><a><li className='hover:text-green-700 md:mr-6'>Contact Us</li></a></Link>
+            <Link href={"/contactus"}><a><li className='hover:text-red-700 md:mr-6'>Contact Us</li></a></Link>
           </ul>
         </div>
         <div className="flex cursor-pointer cart absolute right-0 top-3.5 md:top-5 mx-5 items-center">
@@ -108,7 +108,7 @@ const Navbar = ({ logout, user, cart, addToCart, removeFromCart, clearCart, subT
               return <li key={k}>
                 <div className="item flex my-5">
                   <div className='w-2/3 font-semibold'>{cart[k].name}</div>
-                  <div className='flex items-center justify-center w-1/3 font-semibold text-lg'><AiFillMinusCircle onClick={() => { removeFromCart(k, 1, cart[k].price, cart[k].name) }} className='cursor-pointer text-green-500' /><span className='mx-2 text-sm'>{cart[k].qty}</span><AiFillPlusCircle onClick={() => { addToCart(k, 1, cart[k].price, cart[k].name)}} className='cursor-pointer text-green-500' /></div>
+                  <div className='flex items-center justify-center w-1/3 font-semibold text-lg'><AiFillMinusCircle onClick={() => { removeFromCart(k, 1, cart[k].price, cart[k].name) }} className='cursor-pointer text-red-500' /><span className='mx-2 text-sm'>{cart[k].qty}</span><AiFillPlusCircle onClick={() => { addToCart(k, 1, cart[k].price, cart[k].name)}} className='cursor-pointer text-red-500' /></div>
                 </div>
               </li>
             })}
@@ -118,8 +118,8 @@ const Navbar = ({ logout, user, cart, addToCart, removeFromCart, clearCart, subT
           <div className='font-semibold my-3' >SubTotal: ₹{subTotal}</div>
 
           <div className='flex'>
-            <Link href={"/checkout"}><button disabled={Object.keys(cart).length === 0} className="disabled:bg-red-300 flex mr-2 text-white bg-green-500 border-0 py-2 px-2 focus:outline-none hover:bg-green-600 rounded text-sm"><BsFillBagCheckFill className='m-1' />Checkout</button></Link>
-            <button disabled={Object.keys(cart).length === 0} onClick={clearCart} className="disabled:bg-green-300 flex mr-2  text-white bg-green-500 border-0 py-2 px-2 focus:outline-none hover:bg-green-600 rounded text-sm">Clear Cart</button>
+            <Link href={"/checkout"}><button disabled={Object.keys(cart).length === 0} className="disabled:bg-red-300 flex mr-2 text-white bg-red-500 border-0 py-2 px-2 focus:outline-none hover:bg-red-600 rounded text-sm"><BsFillBagCheckFill className='m-1' />Checkout</button></Link>
+            <button disabled={Object.keys(cart).length === 0} onClick={clearCart} className="disabled:bg-red-300 flex mr-2  text-white bg-red-500 border-0 py-2 px-2 focus:outline-none hover:bg-red-600 rounded text-sm">Clear Cart</button>
           </div>
         </div>
       </div>

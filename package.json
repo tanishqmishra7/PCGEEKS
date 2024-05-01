@@ -1,5 +1,5 @@
 {
-  "name": "agrosolutions",
+  "name": "pcgeeks",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "both": "concurrently \"py agro.py\" \"yarn dev\""
+    "both": "concurrently \"py PCGeeks.py\" \"yarn dev\""
   },
   "dependencies": {
     "@emotion/cache": "11.6.0",

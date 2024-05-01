@@ -54,7 +54,7 @@ const PCBuild = ({ products, addToCart }) => {
       const productId = selectedProducts[category];
       const product = products.find(prod => prod.id === productId);
       console.log(product);
-      addToCart(product.id, 1, product.price, product.title);
+      addToCart(product.slug, 1, product.price, product.title);
     }
     setSelectedProducts({});
     setTotalPrice(0);
@@ -105,7 +105,7 @@ const PCBuild = ({ products, addToCart }) => {
       </div>
       {totalPrice > 0 && <p className="mt-4 text-center">Total Price: ₹{totalPrice}</p>}
       <div className='flex justify-center'>
-        <button onClick={handleAddToCart} className="bg-green-500 text-white px-4 py-2 rounded-lg mt-4 flex justify-between">Add to Cart</button>
+        <button onClick={handleAddToCart} className="bg-red-500 text-white px-4 py-2 rounded-lg mt-4 flex justify-between">Add to Cart</button>
       </div>
 
     </div>

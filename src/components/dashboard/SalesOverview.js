@@ -25,7 +25,7 @@ const SalesOverview = () => {
       },
     },
 
-    colors: ["#065D2B", "#27F67F"],
+    colors: ["#850909", "#ef4444"],
     fill: {
       type: "solid",
       opacity: 1,

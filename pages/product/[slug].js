@@ -83,8 +83,8 @@ const Slug = ({ buyNow, addToCart, product, error}) => {
             <div className="flex ">
               {product.availableQty<=0 && <span className="title-font font-medium text-2xl text-gray-900">Out Of Stock!</span>}
               {product.availableQty>0 && <span className="title-font font-medium text-2xl text-gray-900">₹{product.price}</span>}
-              <button disabled={product.availableQty<=0} onClick={() => { buyNow(slug, 1, product.price, product.title) }} className="disabled:bg-green-300 flex ml-3 md:ml-6 text-white bg-green-500 border-0 py-2 px-2 md:px-6 focus:outline-none hover:bg-green-600 rounded">Buy Now</button>
-              <button disabled={product.availableQty<=0} onClick={() => { addToCart(slug, 1, product.price, product.title) }} className="disabled:bg-green-300 flex ml-4 text-white bg-green-500 border-0 py-2 px-2 md:px-6 focus:outline-none hover:bg-green-600 rounded">Add to Cart</button>
+              <button disabled={product.availableQty<=0} onClick={() => { buyNow(slug, 1, product.price, product.title) }} className="disabled:bg-red-300 flex ml-3 md:ml-6 text-white bg-red-500 border-0 py-2 px-2 md:px-6 focus:outline-none hover:bg-red-600 rounded">Buy Now</button>
+              <button disabled={product.availableQty<=0} onClick={() => { addToCart(slug, 1, product.price, product.title) }} className="disabled:bg-red-300 flex ml-4 text-white bg-red-500 border-0 py-2 px-2 md:px-6 focus:outline-none hover:bg-red-600 rounded">Add to Cart</button>
 
 
             </div>
@@ -94,14 +94,14 @@ const Slug = ({ buyNow, addToCart, product, error}) => {
             </div>
             <div className="pin mt-6 flex space-x-3 text-sm">
               <input onChange={onChangePin} type="text" className='px-2 border-2 border-gray-400 rounded' placeholder='Enter Your Pincode' />
-              <button onClick={checkServiceability} className=" text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded">Check</button>
+              <button onClick={checkServiceability} className=" text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded">Check</button>
             </div>
 
             {!service && service != null && <div className="text-red-700 mt-3 text-sm">
               Sorry! We do not deliver to This Pincode yet
             </div>}
 
-            {service && service != null && <div className="text-green-700 mt-3 text-sm">
+            {service && service != null && <div className="text-red-700 mt-3 text-sm">
               Yay! This Pincode is Serviceable
             </div>}
 

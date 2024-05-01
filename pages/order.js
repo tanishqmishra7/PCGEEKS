@@ -45,7 +45,7 @@ const MyOrder = ({clearCart,order}) => {
           <span className="title-font font-medium text-2xl text-gray-900 my-6">SubTotal : ₹{order.amount}</span>  
         </div>
 
-        <button className="flex  text-white bg-green-500 border-0 py-2 px-6 focus:outline-none hover:bg-green-600 rounded">Track Order</button>
+        <button className="flex  text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded">Track Order</button>
 
       </div>
       <img alt="ecommerce" className="lg:w-1/2 w-full lg:h-full h-64 object-cover object-center rounded p-8" src="/bg2.jpg"/>

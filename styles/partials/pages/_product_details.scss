@@ -104,7 +104,7 @@
 
     .saved_price {
         font-weight: 500;
-        color: green;
+        color: red;
         @include margin-y(0.8rem, 0.4rem);
     }
 
@@ -114,7 +114,7 @@
     }
 
     .badge {
-        background-color: green;
+        background-color: red;
         border-radius: 3px;
         padding: 0.5rem 0.7rem;
     }

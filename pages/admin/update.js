@@ -29,9 +29,9 @@ const add = () => {
 
     const submitForm = async (e) => {
         e.preventDefault();
-        const {brand, title, slug, description, imgLink, category, price, availableQty } = form
+        const {title, slug, description, imgLink, category, price, availableQty } = form
 
-        const data = [{brand, title, slug, description, imgLink, category, price, availableQty }];
+        const data = [{title, slug, description, imgLink, category, price, availableQty }];
 
         let a = await fetch(`${process.env.NEXT_PUBLIC_HOST}/api/updateproducts`, {
             method: 'POST', // or 'PUT'
@@ -101,7 +101,6 @@ const add = () => {
                         <BaseCard title="Update Product">
                             <Stack spacing={3}>
 
-                                <TextField onChange={handleChange} value={form.brand ? form.brand : ""} name="brand" label="Brand" variant="outlined" />
                                 <TextField onChange={handleChange} value={form.title ? form.title : ""} name="title" label="Title" variant="outlined" />
                                 <TextField onChange={handleChange} value={form.slug ? form.slug : ""} name="slug" label="Slug" variant="outlined" />
                                 <TextField
