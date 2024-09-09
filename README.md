@@ -31,7 +31,7 @@ Follow these simple steps to set up *PC Geeks* on your local machine:
 
 ### 1. Clone the Repository
 ```bash
-git clone 
+git clone https://github.com/tanishqmishra7/PCGEEKS.git
 cd pc-geeks
 ```
 
@@ -92,6 +92,6 @@ This project was completed as part of our major undergraduate degree requirement
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/tanishqmishra7/PCGEEKS/blob/main/LICENSE) file for details.
 
 ---
